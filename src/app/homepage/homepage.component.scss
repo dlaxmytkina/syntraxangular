@@ -1,0 +1,184 @@
+@mixin card($width, $height, $background) {
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.5s;
+    width: $width;
+    height: $height;
+    background-color: $background;
+    box-shadow: 12px 12px 24px rgba(128, 128, 128, 0.25);
+    &:hover {
+        transform: translate(10px, 10px);
+        box-shadow: 4px 4px 8px rgba(128, 128, 128, 0.25);
+    }
+}
+
+
+.caption {
+    h2 {
+        margin: 0;
+    }
+    p {
+        margin-bottom: 6rem;
+    }
+}
+.the_main_block {
+    margin: 0 auto;
+    margin-top: 10rem;
+    width: 80%;
+    min-width: 70rem;
+    
+    .caption {
+        h2,
+        p {
+            text-align: center;
+        }
+
+        p {
+            .purple {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+            width: fit-content;
+            margin-left: 3.5rem;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            span {
+                font-size: 2.6rem;
+            }
+            svg {
+                margin-left: 1rem;
+                width: 2rem;
+                transition: 0.5s;
+            }
+            &:hover {
+                svg {
+                    transform: translateX(80%);
+                }
+            }
+        }
+    }
+    .img_block {
+        position: relative;
+        .svg_back {
+            position: absolute;
+            z-index: 0;
+            bottom: 0;
+            width: 60%;
+            max-width: 48rem;
+        }
+        img {
+            position: relative;
+            z-index: 10;
+            width: 70%;
+            max-width: 55rem;
+        }
+        .svg_back,
+        img {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+.services_block_homepage {
+    .caption {
+        width: 80rem;
+    }
+    .services {
+        margin-top: 9rem;
+        display: flex;
+        justify-content: space-between;
+
+        .service_card {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include card(27rem, 34rem, #f0f0f0);
+
+            &:nth-child(odd) {
+                margin-top: 11rem;
+            }
+            img {
+                width: 14.5rem;
+            }
+            p {
+                font-weight: 600;
+                font-size: 2.1rem;
+                text-align: center;
+            }
+        }
+    }
+}
+.works_block {
+    .caption {
+        width: 80rem;
+    }
+    .btn_small {
+        margin-right: 3rem;
+    }
+    .active_btn {
+        background-color: #a685e2;
+        color: white;
+    }
+    .animation_block {
+        position: relative;
+        width: 100%;
+    }
+    .works {
+        display: flex;
+        margin-top: 6rem;
+        .cards_block {
+            width: 50%;
+            &:last-of-type {
+                margin-top: 6rem;
+            }
+            .work_card {
+                @include card(38rem, auto, #f1f1f1);
+                margin-bottom: 4rem;
+                img {
+                    width: 100%;
+                }
+                .card_caption {
+                    padding: 3rem;
+                    h4 {
+                        font-weight: 600;
+                        margin-top: 0;
+                        margin-bottom: 2rem;
+                    }
+                    a {
+                        color: #a685e2;
+                        font-size: 1.6rem;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .btn_big {
+        margin-top: 6rem;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.connect_block_homepage {
+    position: relative;
+    h1 {
+        text-align: center;
+    }
+    .btn_big {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

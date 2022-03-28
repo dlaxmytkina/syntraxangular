@@ -1,0 +1,63 @@
+<header class="navigation">
+  <h3>Syntrax</h3>
+  <div class="navigation_links">
+    <span routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</span>
+    <span routerLink="work" routerLinkActive="active-link">Work</span>
+    <span routerLink="wedo" routerLinkActive="active-link">What we do</span>
+    <span routerLink="about" routerLinkActive="active-link">About</span>
+    <span routerLink="contact" routerLinkActive="active-link">Contact</span>
+  </div>
+</header>
+
+<div class="router" [@routeAnimation]="getRouteAnimationData()">
+  <router-outlet></router-outlet>
+</div>
+<div class="page_block footer_block">
+  <div class="">
+    <h3>Syntrax</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo pulvinar sit sed eu nulla risus quis amet.</p>
+    <div class="svg">
+      <img src="../assets/homepage/facebook.svg" alt="">
+      <img src="../assets/homepage/twitter.svg" alt="">
+      <img src="../assets/homepage/instagram.svg" alt="">
+      <img src="../assets/homepage/dribbble.svg" alt="">
+      <img src="../assets/homepage/LinkedIn.svg" alt="">
+    </div>
+  </div>
+  <div class="contact">
+    <h3>Contact</h3>
+    <p>
+      <img src="../../assets/homepage/mail.svg" alt="">
+      <a href="mailto:contactatsytrax@gmail.com">contactatsytrax@gmail.com</a>
+    </p>
+    <p>
+      <img src="../../assets/homepage/phone.svg" alt="">
+      <a href="tel:+916266625558">+91 6266625558</a>
+    </p>
+  </div>
+  <div>
+    <h3>About</h3>
+    <p><a href="">About Us</a></p>
+    <p><a href="">Contact us</a></p>
+  </div>
+</div>
+<footer>
+  <span>Ⓒ 2020 Syntrax.in All Rights Reserved.</span>
+</footer>
+<!-- <hr /> -->
+<!-- <button (click)="toggleCards()">Toggle cards</button>
+<hr />
+<app-form (newItemEvent)="addNewCard($event)"></app-form> -->
+
+<!-- <nav>
+  <a class="button" routerLink="/card">Crisis Center</a> |
+  <a class="button" routerLink="/heroes-list">Heroes</a>
+</nav> -->
+
+<!-- <button routerLink="cards">Card</button>
+<button routerLink="switch">Switchy</button>
+<button routerLink="addCards">addCards</button>
+
+
+<br>
+<button (click)="goHome()">Go Home</button> -->

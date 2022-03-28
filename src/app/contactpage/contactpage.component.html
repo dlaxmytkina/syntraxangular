@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="wrapper">
+      <div class="form_block">
+      <div>
+          <h2>Let’s Get Connected</h2>
+          <p>Let’s get Connected and  Make that Dream <span class="purple">Project</span> of <span class="purple">Your’s</span></p>
+
+          <form #myForm="ngForm" novalidate>
+                <input placeholder="Name" class="form-control" name="name" ngModel required />
+                <input placeholder="Email" class="form-control" name="email" ngModel  required email />
+                <input placeholder="Message" class="form-control" name="message" ngModel required  />
+          
+            <div class="form-group">
+                <button [disabled]="myForm.invalid"
+                        class="btn btn_pink btn_normal" (click)="submit(myForm)">Send</button>
+            </div>
+        </form>
+      </div>
+      <img src="../../assets/contactpage/finaly.png" alt="">
+    </div>
+    
+    </div>
+  </div>
+  <div @modal *ngIf="modal" class="success_sending_block">
+    <div class="back"></div>
+    <div class="info">
+    <h3>We will get in touch with you shortly.</h3>
+    <h4>Email: <p>{{email}}</p>
+    </h4>
+    <span (click)="hide_modal()">&#10008;</span> 
+</div>

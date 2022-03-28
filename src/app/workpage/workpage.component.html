@@ -1,0 +1,178 @@
+<div class="container">
+  <div class="wrapper">
+    <div class="the_main_block page_block">
+      <div class="caption">
+        <h2>What <span class="purple">we’ve</span> been working on</h2>
+        <p>
+          We are here to help <b class="purple">YOU</b> and
+          <b class="purple">YOUR</b> buisenss to grow and shine online.
+        </p>
+      </div>
+      <div class="img_block">
+        <img src="../../assets/workpage/work.png" alt="" />
+      </div>
+    </div>
+    <div class="page_block works_block">
+      <div class="caption">
+        <h2>Our recent work</h2>
+        <p>Check out our recent work</p>
+      </div>
+      <div class="buttons">
+        <button
+          (click)="change_cards('web', $event)"
+          class="btn btn_small btn_purple active_btn"
+        >
+          Web
+        </button>
+        <button
+          (click)="change_cards('uiux', $event)"
+          class="btn btn_small btn_purple"
+        >
+          UI/UX
+        </button>
+        <button
+          (click)="change_cards('pwa', $event)"
+          class="btn btn_small btn_purple"
+        >
+          PWA
+        </button>
+      </div>
+      <div class="animation_block" [@newcards]="work_classification">
+        <div *ngIf="work_classification === 'web'" class="works">
+          <div class="cards_block">
+            <div class="work_card">
+              <img src="../../assets/workpage/testcovid.png" alt="" />
+              <div class="card_caption">
+                <h4>Testcovid</h4>
+                <p>Crossplatform app for Covid testing.</p>
+                <br />
+                <a href=""> View Project</a>
+              </div>
+            </div>
+            <div class="work_card">
+              <img src="../../assets/workpage/robert.png" alt="" />
+              <div class="card_caption">
+                <h4>Robert Berski</h4>
+                <p>Portfolio for UI designer.</p>
+                <br />
+                <a href=""> View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="cards_block">
+            <div class="work_card">
+              <img src="../../assets/workpage/edubir.png" alt="" />
+              <div class="card_caption">
+                <h4>Edubin</h4>
+                <p>Online E-learning mobile app.</p>
+                <br />
+                <a href=""> View Project</a>
+              </div>
+            </div>
+            <div class="work_card">
+              <img src="../../assets/workpage/fastcart.png" alt="" />
+              <div class="card_caption">
+                <h4>Fastcart</h4>
+                <p>Crossplatform E-commerce Platform.</p>
+                <br />
+                <a href=""> View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="work_classification === 'uiux'" class="works">
+          <div class="cards_block">
+            <div class="work_card">
+              <img src="../../assets/workpage/edubir.png" alt="" />
+              <div class="card_caption">
+                <h4>Edubin</h4>
+                <p>Online E-learning mobile app.</p>
+                <br />
+                <a href=""> View Project</a>
+              </div>
+            </div>
+            <div class="work_card">
+              <img src="../../assets/workpage/robert.png" alt="" />
+              <div class="card_caption">
+                <h4>Robert Berski</h4>
+                <p>Portfolio for UI designer.</p>
+                <br />
+                <a href=""> View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="cards_block">
+            <div class="work_card">
+              <img src="../../assets/workpage/testcovid.png" alt="" />
+              <div class="card_caption">
+                <h4>Testcovid</h4>
+                <p>Crossplatform app for Covid testing.</p>
+                <br />
+                <a href=""> View Project</a>
+              </div>
+            </div>
+
+            <div class="work_card">
+              <img src="../../assets/workpage/fastcart.png" alt="" />
+              <div class="card_caption">
+                <h4>Fastcart</h4>
+                <p>Crossplatform E-commerce Platform.</p>
+                <br />
+                <a href=""> View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="work_classification === 'pwa'" class="works">
+          <div class="cards_block">
+            <div class="work_card">
+              <img src="../../assets/workpage/robert.png" alt="" />
+              <div class="card_caption">
+                <h4>Robert Berski</h4>
+                <p>Portfolio for UI designer.</p>
+                <br />
+                <a href=""> View Project</a>
+              </div>
+            </div>
+            <div class="work_card">
+              <img src="../../assets/workpage/testcovid.png" alt="" />
+              <div class="card_caption">
+                <h4>Testcovid</h4>
+                <p>Crossplatform app for Covid testing.</p>
+                <br />
+                <a href=""> View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="cards_block">
+            <div class="work_card">
+              <img src="../../assets/workpage/fastcart.png" alt="" />
+              <div class="card_caption">
+                <h4>Fastcart</h4>
+                <p>Crossplatform E-commerce Platform.</p>
+                <br />
+                <a href=""> View Project</a>
+              </div>
+            </div>
+            <div class="work_card">
+              <img src="../../assets/workpage/edubir.png" alt="" />
+              <div class="card_caption">
+                <h4>Edubin</h4>
+                <p>Online E-learning mobile app.</p>
+                <br />
+                <a href=""> View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page_block contact_block">
+        <h2>
+            Got a <span class="purple">Project</span> for us ? Let’s Connect
+         
+        </h2>
+        <button routerLink="../contact" class="btn btn_big btn_pink">Contact us</button>
+      </div>
+  </div>
+</div>

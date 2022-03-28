@@ -1,0 +1,53 @@
+// @import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+.container{
+    width: 400px;
+    margin-left: 50px;
+}
+select,input {
+    width: 300px;
+    box-sizing: border-box;
+    height: 35px;
+    border-radius: 5px;
+    border: 1.5px solid rgb(185, 185, 185);
+   outline: none;
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 10px 0 0;
+    font-size: 14px;
+}
+.btn-default{
+background: rgb(204, 204, 204);
+}
+.btn-success{
+    background: #62d468;
+}
+.alert{
+height: 50px; 
+width: 300px;
+font-size: 13px;
+border-radius: 5px;
+display: flex;
+align-items: center;
+box-sizing: border-box;
+padding-left: 20px;
+}
+.alert-danger{
+    background-color: rgb(251 0 0 / 11%);
+    color: #d70000;
+    border: 1px solid #ff000029;
+}
+
+
+
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid #42A948; /* green */
+  }
+  
+  .ng-invalid:not(form)  {
+    border-left: 5px solid #a94442; /* red */
+  }

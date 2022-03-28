@@ -1,0 +1,46 @@
+<div class="header">
+  <p (click)="expand()">Toggle panel</p>
+</div>
+
+
+<div class="content" [@expandedPanel]="state">
+  <h1>Title</h1>
+
+  <p>Expanded panel</p>
+</div>
+
+<form #myForm>
+  <input
+    type="text"
+    
+    [(ngModel)]="inputValue"
+    #titleForNewCard
+    name="title"
+    id=""
+    placeholder="add your title"
+  />
+</form>
+<button (click)="addNewCard(titleForNewCard)">New</button>
+<br>
+<input type="text"
+[(ngModel)]="search"
+placeholder="search">
+
+<button (click)="changetoggle()">changes</button>
+<div class="cards_block" [@filterAnimation]="cards.length" *ngIf="toggle; else noCards">
+  <app-card *ngFor="let card of (cards | filterForSearch:search); let i = index; " 
+  [index]="i+1" >
+</app-card>
+</div>
+<!-- [card]="iterCard"
+   -->
+
+<!-- <div *ngIf="toggle; else noCards">
+      <app-form></app-form>
+      <app-card></app-card>
+      <app-card></app-card>
+    </div> -->
+
+<ng-template #noCards>
+  <p>Card are hidden!</p>
+</ng-template>

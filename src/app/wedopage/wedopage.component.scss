@@ -1,0 +1,46 @@
+@import "../homepage/homepage.component.scss";
+
+.the_main_block{
+    >button{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.web_development_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    >div{
+        width: 50%;
+        h2{
+            margin: 0;
+        }
+        .purple{
+            font-weight: 600;
+        }
+    }
+    img{
+        width: 40%;
+    }
+}
+
+.wedo_page_block{
+    margin: 15rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    >div{
+        width: 48%;
+        h2{
+            margin: 0;
+        }
+        .purple{
+            font-weight: 600;
+        }
+    }
+    img{
+        width: 48%;
+    }
+}

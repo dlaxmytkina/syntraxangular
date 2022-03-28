@@ -1,0 +1,229 @@
+<div class="container">
+  <div class="wrapper">
+    <div class="the_main_block page_block">
+      <div class="caption">
+        <h2>
+          We Help People To <br />
+          Shine <span class="purple">Online</span>
+        </h2>
+        <p>
+          We are here to help <b class="purple">YOU</b> and
+          <b class="purple">YOUR</b> buisenss to grow and shine online.
+        </p>
+      </div>
+      <div class="links">
+        <button routerLink="wedo" class="btn btn_normal btn_pink">See How</button>
+        <div routerLink="contact">
+          <span class="purple">Lets connect</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 12"
+            fill="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M13.4873 0.549752C13.5627 0.474087 13.6524 0.414055 13.7511 0.373094C13.8498 0.332134 13.9556 0.31105 14.0625 0.31105C14.1694 0.31105 14.2752 0.332134 14.3739 0.373094C14.4726 0.414055 14.5623 0.474087 14.6378 0.549752L19.5127 5.42475C19.5884 5.50023 19.6484 5.58989 19.6894 5.6886C19.7304 5.78731 19.7515 5.89313 19.7515 6C19.7515 6.10688 19.7304 6.2127 19.6894 6.31141C19.6484 6.41012 19.5884 6.49978 19.5127 6.57525L14.6378 11.4503C14.4852 11.6028 14.2783 11.6885 14.0625 11.6885C13.8467 11.6885 13.6398 11.6028 13.4873 11.4503C13.3347 11.2977 13.249 11.0908 13.249 10.875C13.249 10.6592 13.3347 10.4523 13.4873 10.2998L17.7886 6L13.4873 1.70025C13.4116 1.62478 13.3516 1.53512 13.3106 1.43641C13.2696 1.3377 13.2486 1.23187 13.2486 1.125C13.2486 1.01813 13.2696 0.912309 13.3106 0.813598C13.3516 0.714887 13.4116 0.625227 13.4873 0.549752V0.549752Z"
+              fill="#6155A6"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0.25 6C0.25 5.78451 0.335603 5.57785 0.487976 5.42548C0.640349 5.2731 0.847012 5.1875 1.0625 5.1875H18.125C18.3405 5.1875 18.5472 5.2731 18.6995 5.42548C18.8519 5.57785 18.9375 5.78451 18.9375 6C18.9375 6.21549 18.8519 6.42215 18.6995 6.57452C18.5472 6.7269 18.3405 6.8125 18.125 6.8125H1.0625C0.847012 6.8125 0.640349 6.7269 0.487976 6.57452C0.335603 6.42215 0.25 6.21549 0.25 6Z"
+              fill="#6155A6"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="img_block">
+        <svg
+          class="svg_back"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 631 497"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M608.574 35.7557C665.248 108.316 600.204 220.731 547.473 310.746C500.835 390.36 433.964 468.058 341.46 491.74C256.214 513.563 188.878 461.502 124.431 419.047C65.8886 380.482 8.79586 337.413 1.83349 268.011C-5.90343 190.888 15.6058 100.496 86.9977 45.9076C155.049 -6.12679 240.579 24.374 322.554 22.7784C424.045 20.803 553.548 -34.6951 608.574 35.7557Z"
+            fill="#F9B0B9"
+          />
+        </svg>
+
+        <img src="../../assets/homepage/Saly-1.png" alt="" />
+      </div>
+    </div>
+    <div class="page_block services_block_homepage">
+      <div class="caption">
+        <h2>
+          Services that will help <br />
+          <span class="purple">Your Buiseness</span>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere diam
+          amet lacus in. Sed nibh eget lacinia nunc.
+        </p>
+      </div>
+      <div class="services">
+        <div  class="service_card">
+          <img src="../../assets/homepage/uiux.png" alt="" />
+          <p>UI/UX Design</p>
+        </div>
+        <div class="service_card">
+          <img src="../../assets/homepage/iMac.png" alt="" />
+          <p>Web Development</p>
+        </div>
+        <div class="service_card">
+          <img src="../../assets/homepage/Phone.png" alt="" />
+          <p>Progressive Web Apps</p>
+        </div>
+      </div>
+    </div>
+    <div class="page_block works_block">
+      <div class="caption">
+        <h2>
+          Let’s see <span class="purple">what</span> we’ve been<br />
+          working on
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere diam
+          amet lacus in. Sed nibh eget lacinia nunc.
+        </p>
+      </div>
+      <div class="buttons">
+        <button
+          (click)="change_cards('website', $event)"
+          class="btn btn_small btn_purple active_btn"
+        >
+          Website
+        </button>
+        <button
+          (click)="change_cards('uiux', $event)"
+          class="btn btn_small btn_purple"
+        >
+          UI UX
+        </button>
+        <button
+          (click)="change_cards('pwa', $event)"
+          class="btn btn_small btn_purple"
+        >
+          PWA's
+        </button>
+      </div>
+      <div class="animation_block" [@newcards]="work_classification">
+        <div *ngIf="work_classification === 'website'" class="works">
+          <div class="cards_block">
+            <div class="work_card">
+              <img src="../../assets/homepage/snapchat.png" alt="" />
+              <div class="card_caption">
+                <h4>SanpChat Clone</h4>
+                <a href=""> View Project</a>
+              </div>
+            </div>
+            <div class="work_card">
+              <img src="../../assets/homepage/weather.png" alt="" />
+              <div class="card_caption">
+                <h4>Pagoda Partners</h4>
+                <a href=""> View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="cards_block">
+            <div class="work_card">
+              <img src="../../assets/homepage/drumlotion.png" alt="" />
+              <div class="card_caption">
+                <h4>Drumlotion Production</h4>
+                <a href=""> View Project</a>
+              </div>
+            </div>
+            <div class="work_card">
+              <img src="../../assets/homepage/e-learning.png" alt="" />
+              <div class="card_caption">
+                <h4>E-learning App</h4>
+                <a href=""> View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="work_classification === 'uiux'" class="works">
+          <div class="cards_block">
+            <div class="work_card">
+              <img src="../../assets/homepage/drumlotion.png" alt="" />
+              <div class="card_caption">
+                <h4>Drumlotion Production</h4>
+                <a href=""> View Project</a>
+              </div>
+            </div>
+            <div class="work_card">
+              <img src="../../assets/homepage/weather.png" alt="" />
+              <div class="card_caption">
+                <h4>Pagoda Partners</h4>
+                <a href=""> View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="cards_block">
+            <div class="work_card">
+              <img src="../../assets/homepage/snapchat.png" alt="" />
+              <div class="card_caption">
+                <h4>SanpChat Clone</h4>
+                <a href=""> View Project</a>
+              </div>
+            </div>
+            <div class="work_card">
+              <img src="../../assets/homepage/e-learning.png" alt="" />
+              <div class="card_caption">
+                <h4>E-learning App</h4>
+                <a href=""> View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="work_classification === 'pwa'" class="works">
+          <div class="cards_block">
+            <div class="work_card">
+              <img src="../../assets/homepage/e-learning.png" alt="" />
+              <div class="card_caption">
+                <h4>E-learning App</h4>
+                <a href=""> View Project</a>
+              </div>
+            </div>
+            <div class="work_card">
+              <img src="../../assets/homepage/drumlotion.png" alt="" />
+              <div class="card_caption">
+                <h4>Drumlotion Production</h4>
+                <a href=""> View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="cards_block">
+            <div class="work_card">
+              <img src="../../assets/homepage/weather.png" alt="" />
+              <div class="card_caption">
+                <h4>Pagoda Partners</h4>
+                <a href=""> View Project</a>
+              </div>
+            </div>
+
+            <div class="work_card">
+              <img src="../../assets/homepage/snapchat.png" alt="" />
+              <div class="card_caption">
+                <h4>SanpChat Clone</h4>
+                <a href=""> View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button routerLink="work" class="btn btn_big btn_pink">More</button>
+    </div>
+    <div class="page_block connect_block_homepage">
+      <h1>
+        We can’t wait to work <br />
+        with <span class="purple">You</span>
+      </h1>
+      <button routerLink="contact" class="btn btn_big btn_pink">Lets connect</button>
+    </div>
+  </div>
+
+</div>

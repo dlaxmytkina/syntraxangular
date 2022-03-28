@@ -1,0 +1,55 @@
+<div class="card" >
+
+  <h2
+    [ngStyle]="{
+      color: card.title.length < 8 ? 'lightblue' : 'pink'
+    }"
+  >
+  {{index}}. 
+    {{ card.title }}
+  </h2>
+  <!-- <p
+    class="text"
+    [ngClass]="{
+      pink: textColor === 'pink',
+      green: textColor === 'green',
+      purple: textColor === 'purple'
+    }"
+  >
+    {{ text }}
+  </p> -->
+  <p [style.background]="backColor">dinamic back</p>
+
+  <p
+    class="text"
+    [class.pink]="textColor==='pink'"
+    [class.green]="textColor==='green'"
+    [class.purple]="textColor==='purple'"
+  >
+    {{ card.text }}
+  </p>
+
+  <p>{{ getInfo() }}</p>
+
+  <div>
+    <button  (click)="textColor = 'pink'">Set pink</button>
+    <button (click)="textColor = 'green'">Set green</button>
+    <button (click)="textColor = 'purple'">Set purple</button>
+  </div>
+  <!-- <img [src]="imgUrl" />
+  <button [disabled]="disabled">Enable</button> -->
+
+  <div>
+    <button (click)="changeTitle()">Change title</button>
+    <button (click)="card.title = 'new'">Change title inline</button>
+  </div>
+
+  <div>
+      <p>{{cardDate | date :"long": undefined : "ru"}}</p>
+  </div>
+
+  <!-- <input type="text" #myInput (input)="inputHandler(myInput.value)" [value]="title"> -->
+
+  <input type="text" [(ngModel)]="card.title" (ngModelChange)="changeHandler()" />
+  <button *ngIf="goButton"  routerLink="/cards/{{ index }}">Go</button>
+</div>

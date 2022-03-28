@@ -1,0 +1,48 @@
+@import "../homepage/homepage.component.scss";
+
+.the_main_block {
+    button {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 5rem;
+    }
+}
+.info_block_aboutpage {
+    display: flex;
+    justify-content: space-between;
+    >div{
+        width: 55%;
+        h2 {
+        margin: 0;
+    }
+    }
+    img{
+        width: 35%;
+        height: fit-content;
+        
+    }
+    
+}
+.howwestarted_block{
+    img{
+        margin-top: 10%;
+    }
+    
+}
+.end_product_block{
+    >div{
+        margin-top: 15%;
+    }
+}
+.contact_block{
+    position: relative;
+    h2{
+        text-align: center;
+    }
+    button{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

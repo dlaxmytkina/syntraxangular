@@ -1,0 +1,10 @@
+
+<div [ngSwitch]="color" [ngStyle]="{color:color}">
+    <p    *ngSwitchCase="'blue'">This is {{color}} block</p>
+    <p    *ngSwitchCase="'green'">This is {{color}} block</p>
+    
+    
+    <!-- <app-unknown-item  *ngSwitchDefault           [item]="currentItem"></app-unknown-item> -->
+  </div><button (click)="changeColor()">
+    change block
+</button>

@@ -1,0 +1,30 @@
+.card{
+    border: 1px solid gray;
+    margin-bottom: .5rem;
+    padding: .5rem 2rem;
+
+    h2{
+        color: pink;
+    }
+    img{
+        width: 20rem;
+    }
+    input{
+        margin-top: 1rem;
+    }
+    .text{
+        font-size: 1.5rem;
+        font-weight: bold;
+        &.pink{
+            color: rgb(255, 107, 131);
+        }
+        &.green{
+            color: green;
+        }
+        &.purple{
+            color: purple;
+        }
+    }
+
+}
+
