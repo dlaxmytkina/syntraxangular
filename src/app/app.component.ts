@@ -27,7 +27,10 @@ export class AppComponent {
   constructor(private contexts: ChildrenOutletContexts, private router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd && event.id > 1) {
-        this.open_menu();
+        if (this.menu_open){
+          this.open_menu();
+        }
+        
         window.scrollTo({
           top: 0,
           behavior: "smooth"
