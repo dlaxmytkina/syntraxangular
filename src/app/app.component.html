@@ -7,6 +7,18 @@
     <span routerLink="about" routerLinkActive="active-link">About</span>
     <span routerLink="contact" routerLinkActive="active-link">Contact</span>
   </div>
+  <div @openclose_menu *ngIf="menu_open" class="navigation_links_burger_menu">
+    <span routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</span>
+    <span routerLink="work" routerLinkActive="active-link">Work</span>
+    <span routerLink="wedo" routerLinkActive="active-link">What we do</span>
+    <span routerLink="about" routerLinkActive="active-link">About</span>
+    <span routerLink="contact" routerLinkActive="active-link">Contact</span>
+  </div>
+  <div (click)="open_menu()" class="burger_icon" [class.open_menu]="menu_open" [class.close_menu]="!menu_open">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </header>
 
 <div class="router" [@routeAnimation]="getRouteAnimationData()">

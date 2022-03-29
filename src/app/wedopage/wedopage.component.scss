@@ -23,13 +23,32 @@
     img{
         width: 40%;
     }
+    @media screen and (max-width: 1100px) {
+       >div{
+           width: 55%;
+       }
+    }
+    @media screen and (max-width: 840px) {
+        flex-direction: column;
+        align-items: center;
+        >div{
+            width: 100%;
+            
+        }
+        img{
+            width: 40rem;
+            max-width: 100%;
+        }
+     }
 }
+
 
 .wedo_page_block{
     margin: 15rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     
     >div{
         width: 48%;
@@ -43,4 +62,17 @@
     img{
         width: 48%;
     }
+    @media screen and (max-width: 1100px) {
+        flex-direction: column;
+        &:nth-last-of-type(2){
+            flex-direction: column-reverse;
+        }
+        >div{
+            width: 100%;
+        }
+        img{
+            width: 45rem;
+            max-width: 100%;
+        }
+     }
 }
